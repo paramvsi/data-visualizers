@@ -1,0 +1,44 @@
+[
+  {
+    "date": "2023-01-01",
+    "category": "Electronics",
+    "sales": 1000,
+    "profit": 300,
+    "customerVisits": 150
+  },
+  {
+    "date": "2023-02-01",
+    "category": "Clothing",
+    "sales": 1500,
+    "profit": 450,
+    "customerVisits": 240
+  },
+  {
+    "date": "2025-03-01",
+    "category": "Electronics",
+    "sales": 1200,
+    "profit": 360,
+    "customerVisits": 180
+  },
+  {
+    "date": "2023-04-01",
+    "category": "Clothing",
+    "sales": 1600,
+    "profit": 500,
+    "customerVisits": 260
+  },
+  {
+    "date": "2023-05-01",
+    "category": "Electronics",
+    "sales": 900,
+    "profit": 200,
+    "customerVisits": 140
+  },
+  {
+    "date": "2023-06-01",
+    "category": "Clothing",
+    "sales": 1700,
+    "profit": 600,
+    "customerVisits": 300
+  }
+]

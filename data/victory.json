@@ -1,0 +1,44 @@
+[
+  {
+    "month": "January",
+    "category": "Electronics",
+    "sales": 1500,
+    "cost": 700,
+    "profit": 800
+  },
+  {
+    "month": "January",
+    "category": "Clothing",
+    "sales": 1200,
+    "cost": 600,
+    "profit": 600
+  },
+  {
+    "month": "February",
+    "category": "Electronics",
+    "sales": 1800,
+    "cost": 800,
+    "profit": 1000
+  },
+  {
+    "month": "February",
+    "category": "Clothing",
+    "sales": 1600,
+    "cost": 500,
+    "profit": 1100
+  },
+  {
+    "month": "March",
+    "category": "Electronics",
+    "sales": 2000,
+    "cost": 850,
+    "profit": 1150
+  },
+  {
+    "month": "March",
+    "category": "Clothing",
+    "sales": 1700,
+    "cost": 450,
+    "profit": 1250
+  }
+]
