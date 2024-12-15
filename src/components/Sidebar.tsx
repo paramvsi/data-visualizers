@@ -1,5 +1,6 @@
 // src/components/Sidebar.tsx
 import React from "react";
+import Header from "./Header";
 
 interface SidebarProps {
   onSelectLibrary: (library: string) => void;
@@ -13,26 +14,28 @@ const libraries = [
   "Nivo",
   "Echarts",
   "Plotly",
-  "DeckGL",
-  "ReactLeaflet",
-  "React3D",
 ];
 
 const Sidebar: React.FC<SidebarProps> = ({ onSelectLibrary }) => {
   return (
-    <aside className="w-64 bg-cool-grey p-4">
-      <ul className="list-none">
-        {libraries.map((lib) => (
-          <li
-            key={lib}
-            onClick={() => onSelectLibrary(lib)}
-            className="cursor-pointer p-2 hover:bg-light-blue rounded"
-          >
-            {lib}
-          </li>
-        ))}
-      </ul>
-    </aside>
+    <div className="h-screen w-64 border-r-2 border-[#E0E0E0]">
+      <div className="p-5">
+        <Header />
+      </div>
+      <aside className="w-64">
+        <ul className="list-none px-5 font-mono">
+          {libraries.map((lib) => (
+            <li
+              key={lib}
+              onClick={() => onSelectLibrary(lib)}
+              className="cursor-pointer p-2 rounded hover:bg-[#F5F5F5] hover:text-[#333333]"
+            >
+              {lib}
+            </li>
+          ))}
+        </ul>
+      </aside>
+    </div>
   );
 };
 

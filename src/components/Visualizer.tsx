@@ -9,18 +9,10 @@ import EchartsContainer from "./echarts/EchartContainer";
 import PlotlyContainer from "./plotly/PlotlyContainer";
 
 interface VisualizerProps {
-  library: string | null;
+  library: string | "Recharts";
 }
 
 const Visualizer: React.FC<VisualizerProps> = ({ library }) => {
-  console.log(library);
-  if (!library)
-    return (
-      <div className="flex-grow p-4">
-        Please select a library to get started.
-      </div>
-    );
-
   // Render the appropriate container based on the library
   const renderVisualization = () => {
     switch (library) {
@@ -54,7 +46,13 @@ const Visualizer: React.FC<VisualizerProps> = ({ library }) => {
     }
   };
 
-  return <div className="flex-grow p-4">{renderVisualization()}</div>;
+  return (
+    <div className="flex-grow">
+      <h3 className="text-xl p-5 py-10 font-sans text-[#333333]">Dashboard</h3>
+      <hr />
+      <div className="p-4">{renderVisualization()}</div>
+    </div>
+  );
 };
 
 export default Visualizer;

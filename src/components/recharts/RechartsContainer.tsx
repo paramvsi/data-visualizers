@@ -19,7 +19,7 @@ const RechartsContainer: React.FC = () => {
 
   return (
     <div className="p-4 space-y-4">
-      <h2 className="text-lg font-header">Recharts Visualization</h2>
+      <h2 className="text-lg font-mono">Recharts Visualization</h2>
       <JsonUploader onUpload={handleDataUpload} />
       <ChartTypeSelector onChange={handleChartTypeChange} />
       <DynamicRechartsVisualizer data={chartData} type={chartType} />
